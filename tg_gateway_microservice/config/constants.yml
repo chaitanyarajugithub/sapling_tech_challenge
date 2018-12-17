@@ -1,0 +1,35 @@
+# Enter your per-environment constants below
+
+development: &default
+  
+  service_list:
+    auth: 'http://localhost:3001/api/v1'
+    auth_local: 'http://localhost:3001/api/v1'
+    
+    
+qa:
+  <<: *default
+
+staging:
+  
+  service_list:
+    auth: 'http://localhost:3001/api/v1'
+    auth_local: 'http://localhost:3001/api/v1'
+    
+
+preprod:
+  service_list:
+    auth: 'http://localhost:3001/api/v1'
+    auth_local: 'http://localhost:3001/api/v1'
+    
+
+production:
+  service_list:
+    auth: 'http://54.218.38.85:3001/api/v1'
+    auth_local: 'http://54.218.38.85:3001/api/v1'
+  
+
+test:
+  service_list:
+    auth: 'http://localhost:3001/api/v1'
+    auth_local: 'http://localhost:3001/api/v1'
